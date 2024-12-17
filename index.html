@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Globe with Voice</title>
+  <style>
+    body { margin: 0; overflow: hidden; font-family: Arial, sans-serif; }
+    #globe-container { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+    #mic-icon {
+      position: absolute; bottom: 20px; right: 20px; width: 60px; height: 60px; 
+      background-color: #ff5722; border-radius: 50%; display: flex; justify-content: center; align-items: center;
+      cursor: pointer; box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+    #mic-icon img { width: 30px; height: 30px; }
+  </style>
+</head>
+<body>
+  <div id="globe-container"></div>
+  <!-- Microphone Icon -->
+  <div id="mic-icon" title="Click to speak">
+    <img src="https://img.icons8.com/ios-filled/50/microphone.png" alt="Mic Icon">
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
